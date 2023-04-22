@@ -9,3 +9,4 @@
 | Star Triangle | shape |
 | Weird Shape | shape |
 | Zig Zag | transforms a given array to a zigzag |
+| Lab 4 | Activities of Lab 4 |
