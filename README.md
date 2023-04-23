@@ -10,3 +10,4 @@
 | Weird Shape | shape |
 | Zig Zag | transforms a given array to a zigzag |
 | Lab 4 | Activities of Lab 4 |
+| Lab 5 | Activities of Lab 5 |
