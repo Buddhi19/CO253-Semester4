@@ -5,7 +5,8 @@
 | Assignment1 | 2 mcqs of C |
 | DynamicArray | implementation |
 | Power of two | isDivisible by a power of 2 |
-| Sorting | implementation of sort |
+| Bubble Sort | implementation of bubble sort |
+| Insertion Sort | implementation of insertion sort |
 | Star Triangle | shape |
 | Weird Shape | shape |
 | Zig Zag | transforms a given array to a zigzag |
