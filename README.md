@@ -13,3 +13,4 @@
 | Lab 4 | Activities of Lab 4 |
 | Lab 5 | Activities of Lab 5 |
 | Lab 6 | Activities of Lab 6 |
+| YT video contents | Codes I explaned on my Yt channel |
