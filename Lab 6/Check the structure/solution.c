@@ -3,50 +3,47 @@
 #include <limits.h>
 #include <stdbool.h>
 
-int pop(int* a){
-    return a[1];
-}
-int* stackpop(int* a){
-    int len=sizeof(a)/sizeof(int);
-    int* arr=malloc((len-1)*sizeof(int));
-    for (int i=1;i<len;i++){
-        arr[i]=a[i];
+int nextlargernode(int* arr,int left, int right,int key){
+    for(int i=left;i<=right;i++){
+        if(arr[i]>key){
+            return i;
+        }
     }
-    return arr;
+    return right+1;
 }
 
-int* append(int* stack,int value){
-    int len=sizeof(stack)/sizeof(int);
-    stack=realloc(stack,(len+1)*sizeof(int));
-    stack[-1]=value;
-    return stack;
-}
+bool validStructure(int*arr,int left,int right){
+    if(left>right){
+        return true;
+    }
+    int j=nextlargernode(arr,left+1,right,arr[left]);
+    int root=arr[left];
 
-bool isValid(int a[],int n){
-    int* stack=malloc(1*sizeof(int));
-    int node=INT_MIN;
-    for(int i=0;i<n;i++){
-        int value=a[i];
-        if (value<node){
+    for (int i=j+1;i<=right;i++){
+        if(arr[i]<=root){
             return false;
         }
-        while(sizeof(stack)/sizeof(int)>1 && stack[-1]<value){
-            node=pop(stack);
-            stack=stackpop(stack);
-        }
-
-        append(stack,value);
     }
-    return true;
+    return validStructure(arr,left+1,j-1)&&validStructure(arr, j, right);
+
 }
 
+bool isValid(int* arr,int n)
+{
+    if (n == 0)
+        return false;
 
+    return validStructure(arr, 0, n - 1);
+}
 
 
 int main(){
-    int a[5]={40,30,35,80,100};
+    int a[5]={2,1,3,4,5};
     if(isValid(a,5)){
         printf("YES\n");
+    }
+    else{
+        printf("NO\n");
     }
     return 0;
 }

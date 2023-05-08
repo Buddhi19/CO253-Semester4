@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/mnt/d/4th sem C/Lab 6/Check the structure",
-      "program": "/mnt/d/4th sem C/Lab 6/Check the structure/build/Debug/outDebug",
+      "cwd": "/mnt/d/4th sem C/YT video contents/Pointers in C",
+      "program": "/mnt/d/4th sem C/YT video contents/Pointers in C/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
