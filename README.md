@@ -6,6 +6,7 @@
 | DynamicArray | implementation |
 | Power of two | isDivisible by a power of 2 |
 | Bubble Sort | implementation of bubble sort |
+| Concatenate 2 strings | implementation adding 2 strings together |
 | Insertion Sort | implementation of insertion sort |
 | Star Triangle | shape |
 | Weird Shape | shape |
