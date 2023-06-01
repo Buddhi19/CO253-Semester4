@@ -20,7 +20,8 @@ char* counterGame(int n) {
             turn++;
         }
         else{
-            int below=pow(2,log2(n));
+            int m=log2(n);
+            int below=pow(2,m);
             n-=below;
             turn++;
         }
